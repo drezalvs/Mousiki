@@ -152,7 +152,7 @@ h3 {
 }
 
 .caixa1 {
-	background-image: url("../../Mousiki - teste/imagens/welcome-bg.jpg");
+	background-image: url("../imagens/welcome-bg.jpg");
 }
 
 .caixa2{
@@ -161,6 +161,10 @@ h3 {
 
 .caixa3{
 	background-image: url("../imagens/bannercontato.jpg");
+}
+
+.caixa4{
+	background-image: url("../imagens/banner2.jpg");
 }
 
  /*rodape começa aqui */
