@@ -1,0 +1,279 @@
+body, html {
+	margin: 0;
+	font: 16px "Lato", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #000;
+	height: 100%;
+	
+}
+
+/* menu */
+.menu ul {
+	margin: 0;
+	background-color: #000;
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline;
+	margin-right: 50px;
+}
+
+.menu ul li a{
+	padding: 20px 10px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu ul li a:hover{
+	color: #ff4c05;
+}
+
+.menu-1 {
+	padding-left: 450px;
+}
+/* fim do menu*/
+
+.h11 {
+	font-family: "Rodina Light";
+	padding-top: 40px;
+	color: #ff4c05;
+	font-size: 50px;
+	text-align: center;
+}
+
+h2 {
+	color: #ff4c05;
+}
+h3 {
+	display: flex;
+	justify-content: space-around;
+	color: #ff4c05;
+}
+
+.icons-especial {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.nomes-especial  {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+.paragrafo-especial {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-around;
+	padding-bottom: 100px;
+}
+
+.conteudo4 {
+	padding-top: 200px;
+	padding-bottom: 250px;
+}
+
+.conteudo-direita {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 50px;
+	padding-bottom: 25px;
+	color: #ff4c05;
+	font-size: 50px;
+}
+
+.imagem-avaliacao {
+	float: left;
+}
+
+.conteudo-esquerda {
+	padding-top: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 50px;
+	padding-bottom: 25px;
+}
+
+.conteudo-paragrafo {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 50px;
+}
+
+.imagem-revolucao {
+	float: right;
+	padding-top: 15px;
+	padding-bottom: 50px;
+}
+
+.conteudo2 {
+	padding-top: 100px;
+}
+
+.conteudo3 {
+	padding-top: 100px;
+	padding-bottom: 250px;
+}
+.conteudo-direita {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-left: 50px;
+	padding-bottom: 25px;
+}
+
+.imagem-avaliacao {
+	float: left;
+	padding-top: 12px;
+	padding-bottom: 50px;
+}
+
+.conteudo5 {
+	padding-top: 100px;
+}
+
+/* Efeito Parallax ------*/
+.caixa1, .caixa2, .caixa3, .caixa4 {
+	position: relative;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.caixa1 {
+	background-image: url("../../Mousiki - teste/imagens/welcome-bg.jpg");
+}
+
+.caixa2{
+	background-image: url("../imagens/bannersobre.jpg");
+}
+
+.caixa3{
+	background-image: url("../imagens/bannercontato.jpg");
+}
+
+ /*rodape começa aqui */
+
+footer .wrapper .rodape {
+    margin: 0 auto;
+    display: flex;
+    color: white;
+    background-color: #000;
+    bottom: 0%;
+    width: 100%;
+    position: initial;
+}
+footer .wrapper .rodape ul {
+    position: absolute;
+    margin: 0 auto;
+}
+footer .wrapper .rodape li {
+    display: flex;
+    flex-direction: row;
+    float: left;
+	padding-left: 100px;
+    padding: 30px;
+    width: 50px;
+}
+footer .wrapper .rodape ul li a {
+	text-decoration: none;
+	color: white;
+    padding: 3%;
+    position: relative;
+    left: 50px;
+}
+
+footer .wrapper .rodape {
+    height: 75px;
+    bottom: 0%;
+}
+.wrapper .rodape p {
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    display: contents;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.paragrafo-rodape {
+	padding-top: 5px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 12px;padding-bottom: 10px;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	padding-left: 1100px;
+	position: relative;
+	padding-top: 18px;
+	
+}
+
+.face {
+	padding-right: 30px;
+}
+.insta {
+	padding-right: 30px;
+
+}
+
+.twitter {
+	padding-right: 30px;
+}
+
+.imge {
+	height: auto;
+	width: 100%;
+}
+
+/* formulario */
+
+form {
+	font-size: 16px;
+	background: #ffc05;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 10px 10px 10px;
+}
+
+input, textarea {
+	width: 470px;
+	padding: 10px;
+}
+
+.enviar input {
+	background-color: #ff4c05;
+	color: #fff;
+	height: 40px;
+	width: 150px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.enviar input:hover {
+	background-color: #F34500;
+}
+
+textarea {
+	width: 470px;
+	height: 120px;
+	line-height: 20px;
+}
+
+
