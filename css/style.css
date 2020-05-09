@@ -3,7 +3,6 @@ body, html {
 	font: 16px "Lato", "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	color: #000;
 	height: 100%;
-	
 }
 
 /* menu */
@@ -80,10 +79,11 @@ a.active,a:hover{
     margin-right: 40px;
   }
   ul{
+	z-index: 1;
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: #000;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -92,14 +92,14 @@ a.active,a:hover{
   nav ul li{
     display: block;
     margin: 50px 0;
-    line-height: 30px;
+  	background-color: 000;
   }
   nav ul li a{
     font-size: 20px;
   }
   a:hover,a.active{
     background: none;
-    color: #0082e6;
+    color: #ff4c05;
   }
   #check:checked ~ ul{
     left: 0;
@@ -248,6 +248,11 @@ h3 {
 
 .caixa4{
 	background-image: url("../imagens/banner2.jpg");
+}
+
+.banner {
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
  /*rodape começa aqui */
