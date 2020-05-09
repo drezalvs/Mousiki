@@ -144,6 +144,9 @@ h3 {
 	justify-content: space-around;
 }
 
+.p {
+	padding-top: 5px;
+}
 
 .paragrafo-especial {
 	display: flex;
