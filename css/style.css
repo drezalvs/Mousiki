@@ -7,31 +7,110 @@ body, html {
 }
 
 /* menu */
-.menu ul {
-	margin: 0;
-	background-color: #000;
-	list-style: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  background: #000;
+  height: 60px;
+  width: 100%;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 60px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+a.active,a:hover{
+  color: #ff4c05;
+  transition: .2s;
 }
 
-.menu ul li {
-	display: inline;
-	margin-right: 50px;
+.active:hover {
+	background: #fff;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
 }
 
-.menu ul li a{
-	padding: 20px 10px;
-	display: inline-block;
-	color: #fff;
-	text-decoration: none;
-}
-
-.menu ul li a:hover{
-	color: #ff4c05;
-}
-
-.menu-1 {
-	padding-left: 450px;
-}
 /* fim do menu*/
 
 .h11 {
@@ -111,12 +190,16 @@ h3 {
 
 .imagem-revolucao {
 	float: right;
-	padding-top: 15px;
+	padding-top: 2px;
 	padding-bottom: 50px;
 }
 
 .conteudo2 {
 	padding-top: 100px;
+}
+
+.texto {
+	padding-top: 120px;
 }
 
 .conteudo3 {
@@ -177,7 +260,9 @@ footer .wrapper .rodape {
     bottom: 0%;
     width: 100%;
     position: initial;
+	cursor: pointer;
 }
+
 footer .wrapper .rodape ul {
     position: absolute;
     margin: 0 auto;
@@ -196,6 +281,7 @@ footer .wrapper .rodape ul li a {
     padding: 3%;
     position: relative;
     left: 50px;
+	cursor: pointer;
 }
 
 footer .wrapper .rodape {
@@ -224,6 +310,7 @@ footer .wrapper .rodape {
 	padding-left: 1100px;
 	position: relative;
 	padding-top: 18px;
+	padding-left: 50%;
 	
 }
 
@@ -279,5 +366,4 @@ textarea {
 	height: 120px;
 	line-height: 20px;
 }
-
 
